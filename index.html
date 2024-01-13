@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #3498db, #8e44ad);
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ecf0f1;
+            margin-bottom: 20px;
+        }
+
+        #searchContainer {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #searchInputs {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #searchInput,
+        #minPriceInput,
+        #maxPriceInput {
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        #mobileContainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .mobile {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
+            width: calc(25% - 20px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .mobile:hover {
+            transform: scale(1.05);
+        }
+
+        .mobile h1 {
+            color: #3498db;
+            font-size: 24px;
+            margin-bottom: 6px;
+        }
+
+        .mobile h2 {
+            color: #2c3e50;
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+
+        .mobile ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            color: #333;
+        }
+
+        .mobile li {
+            margin-bottom: 4px;
+        }
+
+        .mobile a img {
+            width: 70%;
+            border-radius: 10px;
+            margin-top: 6px;
+        }
+        @media screen and (max-width: 768px) {
+            .mobile {
+                width: calc(100% - 20px);
+            }
+        }
+    </style>
+    <title>Mobile Search</title>
+</head>
+
+<body>
+
+    <h1>Mobile Search</h1>
+
+    <div id="searchContainer">
+        <div id="searchInputs">
+            <input type="text" id="searchInput" placeholder="Search for mobiles">
+            <input type="number" id="minPriceInput" placeholder="Min Price">
+            <input type="number" id="maxPriceInput" placeholder="Max Price">
+        </div>
+    </div>
+
+    <div id="mobileContainer">
+        <div class="mobile" data-price="50690">
+            <h1>One plus 12</h1>
+            <h2>Expected Specs:</h2>
+            <ul>
+                <li>CPU: Snapdragon 8 Gen 3</li>
+                <li>Ram: 12GB</li>
+                <li>Storage: 256GB</li>
+                <li>Cam: 50MP</li>
+                <li>Cost: 50,690/-</li>
+                <li>Battery: 5400 mAh</li>
+            </ul>
+            <a href="https://www.amazon.in/Apple-iPhone-15-128-GB/dp/B0CHX2F5QT?crid=RSK44HYZACRS&keywords=iphone&qid=1704821509&sprefix=iphone%2Caps%2C347&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1&linkCode=ll1&tag=nikhil834134-21&linkId=f16f319d8a2b978588dd023ec290016a&language=en_IN&ref_=as_li_ss_tl">
+                <img src="1.jpeg" alt="iPhone 15 Image">
+            </a>
+        </div>
+        <div class="mobile" data-price="39490">
+            <h1>Xiaomi Redmi K70</h1>
+            <h2>Expected Specs:</h2>
+            <ul>
+                <li>CPU: Snapdragon 8 Gen 3 5G</li>
+                <li>Ram: 12GB</li>
+                <li>Storage: 256GB</li>
+                <li>Cam: 50MP</li>
+                <li>Cost: 39,490/-</li>
+                <li>Battery: 5000 mAh</li>
+            </ul>
+            <a href="https://www.amazon.in/Samsung-Galaxy-Ultra-Phantom-Storage/dp/B0BT9FDZ8N?crid=AEL76VH3BC3U&keywords=samsung+s23+ultra&qid=1701880207&sprefix=samsung+s23+ultra%2Caps%2C267&sr=8-5&linkCode=ll1&tag=nikhil834134-21&linkId=c4401fec36a2ce628ecc8365be421355&language=en_IN&ref_=as_li_ss_tl">
+                <img src="2.jpeg" alt="Mobile 2 Image">
+            </a>
+        </div>
+        <div class="mobile" data-price="39890">
+            <h1>Realme GT 5 pro</h1>
+            <h2>Expected Specs:</h2>
+            <ul>
+                <li>CPU: Snapdragon 8 Gen 3 5G</li>
+                <li>Ram: 12GB</li>
+                <li>Storage: 256GB</li>
+                <li>Cam: 50MP</li>
+                <li>Cost: 39,890</li>
+                <li>Battery: 5400 mAh</li>
+            </ul>
+            <a href="https://www.amazon.in/vivo-V29e-Artistic-128GB-Storage/dp/B0CQRLHMWV?crid=T2CXL2B8AOZ1&keywords=vivo%2Bv29e&qid=1704821779&sprefix=vivo%2Bv29e%2Caps%2C291&sr=8-1&th=1&linkCode=ll1&tag=nikhil834134-21&linkId=4a7eac9530bf2dc7664d87adf597fea9&language=en_IN&ref_=as_li_ss_tl">
+                <img src="3.jpeg" alt="Mobile 3 Image">
+            </a>
+        </div>
+        <div class="mobile" data-price="56890">
+            <h1>Xioami 14 pro</h1>
+            <h2>Expected Specs:</h2>
+            <ul>
+                <li>CPU: Snapdragon 8 Gen 3 5G</li>
+                <li>Ram: 12GB</li>
+                <li>Storage: 256GB</li>
+                <li>Cam: 50MP</li>
+                <li>Cost: 56,890/-</li>
+                <li>Battery: 4880 mAh</li>
+            </ul>
+            <a href="https://www.amazon.in/OnePlus-Sonic-Black-128GB-Storage/dp/B0BSNP46QP?crid=4KVZNDLV73NU&keywords=oneplus+11r&qid=1704822213&sprefix=oneplus+11r%2Caps%2C293&sr=8-1&linkCode=ll1&tag=nikhil834134-21&linkId=73901079f3721b34fbbccae6047a9e8f&language=en_IN&ref_=as_li_ss_tl">
+                <img src="4.jpeg" alt="Mobile 4 Image">
+            </a>
+        </div>
+        <div class="mobile" data-price="58090">
+            <h1>IQOO 12 pro</h1>
+            <h2>Expected Specs:</h2>
+            <ul>
+                <li>CPU: Snapdragon 8 Gen 3 5G</li>
+                <li>Ram: 16GB</li>
+                <li>Storage: 256GB</li>
+                <li>Cam: 50MP</li>
+                <li>Cost: 58,090/-</li>
+                <li>Battery: 5100 mAh</li>
+            </ul>
+            <a href="https://www.amazon.in/iQOO-Storage-Dimensity-Processor-Segment/dp/B07WGPKNGT?crid=1KIYH1IT71P19&keywords=iqoo%2Bneo%2B7&qid=1704822815&sprefix=iqoo%2Bneo%2B%2Caps%2C309&sr=8-2&th=1&linkCode=ll1&tag=nikhil834134-21&linkId=b8b0de76f4c2bc41b547470cef157956&language=en_IN&ref_=as_li_ss_tl">
+                <img src="5.jpeg" alt="IQOO Neo 7 Image">
+            </a>
+            </div>
+            <div class="mobile" data-price="27390">
+                <h1>Vivo S18</h1>
+                <h2>Expected Specs:</h2>
+                <ul>
+                    <li>CPU: Snapdragon 7 Gen 3 5G</li>
+                    <li>Ram: 8GB</li>
+                    <li>Storage: 256GB</li>
+                    <li>Cam: 50MP</li>
+                    <li>Cost: 27,390/-</li>
+                    <li>Battery: 5000 mAh</li>
+                </ul>
+                <a href="https://www.amazon.in/iQOO-Storage-Snapdragon%C2%AE-Independent-Flagship/dp/B07WGNJF9L?crid=KQB612CHWPED&keywords=iqoo%2Bneo%2B7%2Bpro&qid=1704823080&sprefix=iqoo%2Bneo%2B7%2Bpr%2Caps%2C399&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll1&tag=nikhil834134-21&linkId=c0c88235dfb5543067f0bff680da40c7&language=en_IN&ref_=as_li_ss_tl">
+                    <img src="6.jpeg" alt="Mobile 6 Image">
+                </a>
+            </div>
+            <div class="mobile" data-price="17090">
+                <h1>Samsung Galaxy A15</h1>
+                <h2>Expected Specs:</h2>
+                <ul>
+                    <li>CPU: MediaTek Helio G99</li>
+                    <li>Ram: 8GB</li>
+                    <li>Storage: 128GB</li>
+                    <li>Cam: 50MP</li>
+                    <li>Cost: 17,090/-</li>
+                    <li>Battery: 5000 mAh</li>
+                </ul>
+                <a href="https://www.amazon.in/Samsung-Awesome-Storage-Gorilla-Without/dp/B0BXD3CDP8?crid=7F9RB778IGIP&keywords=samsung%2Ba&qid=1704865502&sprefix=samsung%2Ba%2Caps%2C242&sr=8-9&th=1&linkCode=ll1&tag=nikhil834134-21&linkId=de4557e7552607a1a170821860cba43c&language=en_IN&ref_=as_li_ss_tl">
+                    <img src="7.jpeg" alt="Mobile 7 Image"></a>
+            </div>
+            <div class="mobile" data-price="18890">
+                <h1>Vivo Y100i</h1>
+                <h2>Expected Specs:</h2>
+                <ul>
+                    <li>CPU: Dimensity 6020 5G</li>
+                    <li>Ram: 12GB</li>
+                    <li>Storage: 512GB</li>
+                    <li>Cam: 50MP</li>
+                    <li>Cost: 18,890/-</li>
+                    <li>Battery: 5000 mAh</li>
+                </ul>
+                <a href="https://www.amazon.in/iQOO-MediaTek-Dimesity-Processor-Smartphone/dp/B07WGPKLFL?crid=2GVUNL3I0UYMZ&keywords=iqoo%2Bz7%2Bpro&qid=1705059907&sprefix=iqooo%2Bz7%2Caps%2C511&sr=8-3&th=1&linkCode=ll1&tag=nikhil834134-21&linkId=0ee90edb38726eaaef00f6dac0b2f5e0&language=en_IN&ref_=as_li_ss_tl">
+                    <img src="8.jpeg" alt="Mobile 8 Image">
+            </div>
+            <div class="mobile" data-price="8990">
+                <h1>Infinix Hot 40</h1>
+                <h2>Expected Specs:</h2>
+                <ul>
+                    <li>CPU: MediaTek Helio G88</li>
+                    <li>Ram: 8GB</li>
+                    <li>Storage: 128GB</li>
+                    <li>Cam: 50MP</li>
+                    <li>Cost: 8,990/-</li>
+                    <li>Battery: 5000 mAh</li>
+                </ul>
+                <a href="https://www.amazon.in/OnePlus-Nord-Surge-128GB-Storage/dp/B0C9QS5G2R?crid=QULUQXR7LF9D&keywords=one%2Bplus%2Bnord%2Bce%2B3&qid=1705060182&sprefix=one%2Bplus%2Bnord%2Bce%2B%2Caps%2C238&sr=8-1&th=1&linkCode=ll1&tag=nikhil834134-21&linkId=c505e81a19f2589d88f73b46e26250b3&language=en_IN&ref_=as_li_ss_tl">
+                    <img src="9.jpeg" alt="Mobile 9 Image">
+            </div>
+            <div class="mobile" data-price="48990">
+                <hi>One Plus 12R</hi>
+                <h2>Expected Specs:</h2>
+                <ul>
+                    <li>CPU: Sanpdragon 8 Gen 2</li>
+                    <li>Ram: 8GB</li>
+                    <li>Storage: 128GB</li>
+                    <li>Cam: 50MP</li>
+                    <li>Cost: 48,990/-</li>
+                    <li>Battery: 5500 mAh</li>
+                </ul>
+                <a href="https://www.amazon.in/Samsung-Awesome-Graphite-Storage-Gorilla/dp/B0BXD5ZZQ5?crid=2DVXV0BPVA790&keywords=samsung%2Ba34&qid=1705060338&sprefix=samsung%2Ba34%2Caps%2C288&sr=8-1&th=1&linkCode=ll1&tag=nikhil834134-21&linkId=ad4e486ccda141fd15ecadcefe1cf3ae&language=en_IN&ref_=as_li_ss_tl">
+                    <img src="10.jpeg" alt="Mobile 10 Image">
+                </a>
+            </div>
+            <div class="mobile" data-price="23999">
+                <h1>Infinix Hot 40 pro</h1>
+                <h2>Expected Specs:</h2>
+                <ul>
+                    <li>CPU: MediaTek Helio G99</li>
+                    <li>Ram: 8GB</li>
+                    <li>Storage: 128GB</li>
+                    <li>Cam: 108MP</li>
+                    <li>Cost: 12,990/-</li>
+                    <li>Battery: 5000 mAh</li>
+                </ul>
+                <a href="https://www.amazon.in/realme-Orange-MediaTek-Dimensity-Curved-Display/dp/B0C788T92F?crid=24S9RBF2S61DI&keywords=realme+narzo+60+pro&qid=1705060919&sprefix=realme+narzo+60+pro%2Caps%2C216&sr=8-1&linkCode=ll1&tag=nikhil834134-21&linkId=0c9072945ddb1d1c703e90c69ac8b841&language=en_IN&ref_=as_li_ss_tl">
+                    <img src="11.jpeg" alt="Mobile 11 Image">
+                </a>
+            </div>
+            <div class="mobile" data-price="34290">
+                <h1>One Plus Ace 2 pro</h1>
+                <h2>Expected Specs:</h2>
+                <ul>
+                    <li>Ram: 12GB</li>
+                    <li>Storage: 256GB</li>
+                    <li>Cam: 50MP</li>
+                    <li>Cost: 34,290</li>
+                    <li>Battery: 5000 mAh</li>
+                </ul>
+            </div>
+            
+        <!-- Add more mobile items as needed -->
+    </div>
+
+    <script>
+        // Add event listeners for 'keyup' on the input fields
+        document.getElementById('searchInput').addEventListener('keyup', searchMobiles);
+        document.getElementById('minPriceInput').addEventListener('keyup', searchMobiles);
+        document.getElementById('maxPriceInput').addEventListener('keyup', searchMobiles);
+
+        function searchMobiles() {
+            var input, minPriceInput, maxPriceInput, filter, minPriceFilter, maxPriceFilter, mobileContainer, mobiles, mobile, i, txtValue, mobilePrice;
+            input = document.getElementById('searchInput');
+            minPriceInput = document.getElementById('minPriceInput');
+            maxPriceInput = document.getElementById('maxPriceInput');
+            filter = input.value.toUpperCase();
+            minPriceFilter = minPriceInput.value ? parseInt(minPriceInput.value) : 0;
+            maxPriceFilter = maxPriceInput.value ? parseInt(maxPriceInput.value) : Infinity;
+            mobileContainer = document.getElementById('mobileContainer');
+            mobiles = mobileContainer.getElementsByClassName('mobile');
+
+            for (i = 0; i < mobiles.length; i++) {
+                mobile = mobiles[i];
+                txtValue = mobile.textContent || mobile.innerText;
+                mobilePrice = parseInt(mobile.getAttribute('data-price'));
+
+                if (txtValue.toUpperCase().indexOf(filter) > -1 && mobilePrice >= minPriceFilter && mobilePrice <= maxPriceFilter) {
+                    mobile.style.display = 'inline-block';
+                } else {
+                    mobile.style.display = 'none';
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
